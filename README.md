@@ -22,3 +22,8 @@ You will also need to set the env var DISCORD_BOT_TOKEN_KEY to the secret token 
 After that, all you need to do is add your bot to your server, and you can then communicate with it from any channel.
 
 This app is based off of: https://discordjs.guide/popular-topics/embeds.html#embed-preview
+
+To deploy with Kubernetes you must create a secret file containing the DISCORD_BOT_TOKEN_KEY env variable.
+
+This can be done with
+`kubectl create secret generic discord-chatbot --from-literal=DISCORD_BOT_TOKEN_KEY=<token>`

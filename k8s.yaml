@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discord-chatbot
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      svc: microservice
+  template:
+    metadata:
+      labels:
+        svc: microservice
+    spec:
+      containers:
+        - name: discord-chatbot-microservice
+          image: enmotus/discord-chatbot
+          env:
+            - name: DISCORD_BOT_TOKEN_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: discord-chatbot
+                  key: DISCORD_BOT_TOKEN_KEY
