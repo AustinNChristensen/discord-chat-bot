@@ -20,3 +20,5 @@ module.exports = {
 You will also need to set the env var DISCORD_BOT_TOKEN_KEY to the secret token for your discord chatbot.
 
 After that, all you need to do is add your bot to your server, and you can then communicate with it from any channel.
+
+This app is based off of: https://discordjs.guide/popular-topics/embeds.html#embed-preview
