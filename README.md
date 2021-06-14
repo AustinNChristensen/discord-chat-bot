@@ -1,8 +1,10 @@
-# discord-chat-bot
+# discord-chatbot
 
 Adding new commands can be done by adding a new `.js` file within the `commands` folder.
 
-It should have the shape: ```
+It should have the shape:
+
+```
 module.exports = {
     name: <unique string>,
     description: <description>,
@@ -13,5 +15,8 @@ module.exports = {
         // the message object has access to the client at message.client.*
        }
 }
-
 ```
+
+You will also need to set the env var DISCORD_BOT_TOKEN_KEY to the secret token for your discord chatbot.
+
+After that, all you need to do is add your bot to your server, and you can then communicate with it from any channel.
