@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "docker:build": "docker build enmotus/discord-chatbot .",
+    "docker:build": "docker build -t enmotus/discord-chatbot .",
     "docker:publish": "docker push enmotus/discord-chatbot"
   },
   "repository": {
