@@ -1,0 +1,24 @@
+{
+  "name": "discord-chat-bot",
+  "version": "1.0.0",
+  "description": "A chatbot that connects to discord to handle and execute on command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AustinNChristensen/discord-chat-bot.git"
+  },
+  "author": "Austin Christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AustinNChristensen/discord-chat-bot/issues"
+  },
+  "homepage": "https://github.com/AustinNChristensen/discord-chat-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.3",
+    "dotenv": "^10.0.0"
+  }
+}
